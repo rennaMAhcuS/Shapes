@@ -29,6 +29,33 @@
   if you change them. [Here](https://makefiletutorial.com) is a nice tutorial
   for `Makefile`.
 
+### `Makefile` for a simple C++ project
+
+This is an example `Makefile` for a codebase which has ALL of its code in a
+single directory.
+
+```makefile
+CXX = clang++
+CXXFLAGS = -std=c++20 -Wall -Wextra -Werror -I<include-directories> -MMD -MP
+LDFLAGS = -L<lib-directories> -l<lib-name>
+SOURCES = $(wildcard *.cpp)
+OBJECTS = $(SOURCES:.cpp=.o)
+DEPS = $(OBJECTS:.o=.d)
+TARGET = shapes
+
+all: $(TARGET)
+
+$(TARGET): $(OBJECTS)
+	$(CXX) $^ -o $@ $(LDFLAGS)
+
+-include $(DEPS)
+
+clean:
+	rm -rf $(TARGET) $(OBJECTS) $(DEPS)
+
+.PHONY: all clean
+```
+
 ## A simple Project
 
 So now you have started to learn about how to start building projects in cpp. To
@@ -186,29 +213,6 @@ being fixed priorly.
 The resources and the documentation for SFML are available in the SFML's
 official [website](https://www.sfml-dev.org)
 
-## The `Makefile` for a simple C++ project
+See the UML diagram below:
 
-This is an example `Makefile` for a codebase which has ALL of its code in a
-single directory.
-
-```makefile
-CXX = clang++
-CXXFLAGS = -std=c++20 -Wall -Wextra -Werror -I<include-directories> -MMD -MP
-LDFLAGS = -L<lib-directories> -l<lib-name>
-SOURCES = $(wildcard *.cpp)
-OBJECTS = $(SOURCES:.cpp=.o)
-DEPS = $(OBJECTS:.o=.d)
-TARGET = shapes
-
-all: $(TARGET)
-
-$(TARGET): $(OBJECTS)
-	$(CXX) $^ -o $@ $(LDFLAGS)
-
--include $(DEPS)
-
-clean:
-	rm -rf $(TARGET) $(OBJECTS) $(DEPS)
-
-.PHONY: all clean
-```
+<img src="UML.png" alt="UML diagram" width="500">
