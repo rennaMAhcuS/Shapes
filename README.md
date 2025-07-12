@@ -6,7 +6,7 @@ in `C++`.
 ## CMake
 
 Refer this project's `CMakeLists.txt` files to know more about CMake. Note that
-this project depends on the [**SFML**](https://www.sfml-dev.org) library.
+this project depends on the [SFML](https://www.sfml-dev.org) library.
 
 ## About C++ building - Compiler options
 

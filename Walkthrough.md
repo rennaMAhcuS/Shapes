@@ -215,4 +215,8 @@ official [website](https://www.sfml-dev.org)
 
 See the UML diagram below:
 
-<img src="UML.png" alt="UML diagram" width="500">
+<img src="UML.png" alt="UML diagram" width="1090">
+
+> ### Credits
+> **My SoC mentors**: K.S.Shriram Kumar, Rishabh RP, Hari and Arohan Hazarika
+> for the Problem Statement
