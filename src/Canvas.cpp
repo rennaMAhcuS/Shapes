@@ -1,5 +1,6 @@
+#include "Shapes/Canvas.hpp"
+
 #include <SFML/Window/Event.hpp>
-#include <Shapes/Canvas.hpp>
 
 void Canvas::add_shape(Shape* s) { shapes.push_back(s); }
 

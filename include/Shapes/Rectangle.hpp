@@ -1,6 +1,7 @@
 #pragma once
 #include <SFML/Graphics.hpp>
-#include <Shapes/Shape.hpp>
+
+#include "Shapes/Shape.hpp"
 
 class Rectangle : public Shape {
     int length;

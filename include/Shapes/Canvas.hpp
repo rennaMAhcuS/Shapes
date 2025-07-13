@@ -1,6 +1,7 @@
 #pragma once
-#include <Shapes/Shape.hpp>
 #include <vector>
+
+#include "Shapes/Shape.hpp"
 
 class Canvas {
     std::vector<Shape*> shapes;

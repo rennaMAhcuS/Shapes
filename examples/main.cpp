@@ -1,11 +1,12 @@
-#include <Shapes/Canvas.hpp>
-#include <Shapes/Circle.hpp>
-#include <Shapes/Ellipse.hpp>
-#include <Shapes/Rectangle.hpp>
-#include <Shapes/Shape.hpp>
-#include <Shapes/Square.hpp>
 #include <iostream>
 #include <vector>
+
+#include "Shapes/Canvas.hpp"
+#include "Shapes/Circle.hpp"
+#include "Shapes/Ellipse.hpp"
+#include "Shapes/Rectangle.hpp"
+#include "Shapes/Shape.hpp"
+#include "Shapes/Square.hpp"
 
 int main() {
     Rectangle rec(100, 200, 46, 53);

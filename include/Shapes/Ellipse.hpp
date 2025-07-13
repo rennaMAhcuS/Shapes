@@ -1,6 +1,7 @@
 #pragma once
 #include <SFML/Graphics.hpp>
-#include <Shapes/Shape.hpp>
+
+#include "Shapes/Shape.hpp"
 
 class Ellipse final : public Shape {
     int semi_major;

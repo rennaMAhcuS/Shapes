@@ -8,7 +8,7 @@ add_library(shapes_core
 )
 
 target_include_directories(shapes_core
-        PUBLIC ${CMAKE_SOURCE_DIR}/include
+        PUBLIC ${PROJECT_SOURCE_DIR}/include
 )
 
 target_link_libraries(shapes_core

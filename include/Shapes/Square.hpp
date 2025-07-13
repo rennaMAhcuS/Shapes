@@ -1,6 +1,6 @@
 #pragma once
 
-#include <Shapes/Rectangle.hpp>
+#include "Shapes/Rectangle.hpp"
 
 class Square final : public Rectangle {
    public:
