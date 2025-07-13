@@ -7,8 +7,10 @@ add_library(shapes_core
         Square.cpp
 )
 
-target_include_directories(shapes_core PUBLIC ${CMAKE_SOURCE_DIR}/include)
+target_include_directories(shapes_core
+        PUBLIC ${CMAKE_SOURCE_DIR}/include
+)
 
 target_link_libraries(shapes_core
-        PRIVATE sfml-graphics sfml-window sfml-system
+        PUBLIC SFML::Graphics
 )
